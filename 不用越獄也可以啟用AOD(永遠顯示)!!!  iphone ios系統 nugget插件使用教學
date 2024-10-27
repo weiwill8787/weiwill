@@ -1,0 +1,98 @@
+2024/10/28 凌晨03:30
+
+
+閱讀前提示 本文會將重點放在如何開啟AOD 如想要使用其他功能請自行操作
+
+嗨 我是瑋瑋
+這是我第一次使用github做教學文 也是第一次寫這麼長的文章 所以有任何需要改進的地方都請盡量告知我 謝謝!
+
+至於為甚麼想做這個嗎? 我最近剛換我姊傳承給我的iphone12pro(謝謝姊姊)，然後上網一查才發現他居然沒有AOD(always on display) 也就是永遠顯示
+但我在google上查了好久也沒有知道有什麼啟用它的方法 直到…
+
+我像往常一樣看著yt 划著划著看到了阿哲的新影片
+[iphone 16 使用心得]https://www.youtube.com/watch?v=VzVV9DXVvPg&t=1210s
+(阿哲我愛你)
+我就點進去看了 結果在20:00那邊看到阿哲介紹一款叫做"nugget"的軟體
+居然可以讓沒有AOD功能的iphone能用AOD! 而且還不用越獄!!!
+所以我興致勃勃的在google上查詢有關他的安裝方法
+但發現幾乎所有文章都是英文的 而且好像還不太準確
+所以把資料東拼西湊後才把AOD成功的裝上我的iphone
+真是可喜可賀可喜可賀!!
+
+於是我決定寫一篇nugget的使用教學來給中文使用者看!!!
+
+宇宙級免責聲明:
+操作前請備份好你的資料
+如發生變磚/無限開機 等等的問題皆與本人無關
+如無法承擔可能的後果請不要嘗試操作!!
+
+回歸正題
+以下是使用nugget的必備用品
+1: iphone (照理來說只要不是太舊的都能刷 適用於所有ios本 最新到18.1 beta 4 )
+2: windows系統的電腦(mac照理來說也可以用 但我沒有所以無法測試:p)
+3: 能連上電腦的傳輸線
+
+步驟一:iphone前置作業
+1.下載Shortcuts程式
+連結:https://www.icloud.com/shortcuts/d6f0a136ddda4714a80750512911c53b
+(要使用手機開啟此連結)
+然後按確認安裝捷徑
+
+2.去手機設定關閉 尋找我的iphone
+(此步驟需要先關閉 遭竊裝置防護 並等待安全倒計時 一小時)
+p.s. 有些手機好像可以不用等?你自己試試吧反正我的需要
+
+步驟二:電腦前置作業
+1.在電腦中下載nugget並解壓縮
+nugget網址:https://github.com/leminlimez/Nugget/releases/tag/v3.0
+(記得選windows版的)
+
+2.下載python
+python網址:https://www.python.org/downloads/
+(選下載最新版本)
+然後安裝
+
+3.下載ituns
+ituns網址:https://www.azofreeware.com/2019/03/itunes.html
+(不能使用microsoft商店版的 所以這裡使用阿榮福利味的下載連結
+如果已經下載microsoft商店版的請先刪除再下載阿榮福利味版本)
+下載後保持開啟 等等使用nugget時會用到
+
+4.打開電腦的cmd(命令提示字元)記得選以系統管理員身分執行
+
+先輸入
+python3 -m venv .env
+
+再輸入
+.env/Scripts/activate.bat
+或是
+pip3 install -r requirements.txt
+或是
+python3 main_app.py
+(下面三種都打一次 總有一個是正確的)
+
+步驟三:手機連接電腦
+
+1.使用傳輸線連接電腦與手機後開啟nugget
+就可以看到nugget的程式畫面了 裡面有許多功能都可以使用
+AOD功能在Mobile Gestalt欄 的最下面 Enable Always On Display
+按一下功能左邊的方框即可選擇你想要開啟的功能
+
+2.打開iphone上的"捷徑" 並開啟SaveMobileGestalt
+然後按右下角的瀏覽 點進我的iphone 按右上角的開啟
+
+3.再開啟一次SaveMobileGestalt 長按一個剛剛新增的叫做com.apple.MobileGestalt.plist的檔案 並將此檔案傳給電腦(任何能使用的方法都可以)
+如果傳到電腦後檔案副檔名有變就要將它改成".plist"
+(例如變成com.apple.MobileGestalt.txt 就要改成 com.apple.MobileGestalt.plist)
+
+4.返回nugget程式並按左邊的apply
+點一下中間的Choose Gestalt File 並選擇你剛剛傳給電腦的plist檔案 然後按開啟
+再來按Apply Changes它就會幫你手機重開機並且啟用你剛剛的設定
+
+至此教程結束 恭喜你成功修改好你的iphone了!!
+希望大家都能從我的文章中有所收穫!!
+
+再次聲明 這是我第一次使用github做教學文 也是第一次寫這麼長的文章 所以有任何需要改進的地方都請盡量告知我 感謝大家願意看到這邊><
+
+如果有任何問題都可以直接問我 有空就會回覆
+我的電子信箱:b0966010648@gmail.com
